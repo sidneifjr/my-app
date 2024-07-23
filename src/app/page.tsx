@@ -1,11 +1,11 @@
-import { getItems } from '@/api/getItems'
+import { readItems } from '@/api/readItems'
 import { Dashboard } from '@/components/dashboard'
 import { ModalForm } from '@/components/modal/modal-form'
 import { H2 } from '@/components/typography/h2'
 import { Paragraph } from '@/components/typography/paragraph'
 
 export default async function Home() {
-  const data = await getItems()
+  const data = await readItems('/apolices')
 
   return (
     <div className="flex flex-col gap-8">
