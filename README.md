@@ -42,7 +42,7 @@ O prazo de entrega é de uma semana.
 
 ### Testes.
 
-`pnpm test`S.
+`pnpm test`.
 
 ## Stack
 
@@ -60,7 +60,7 @@ O prazo de entrega é de uma semana.
 
 Foi uma experiência enriquecedora e repleto de desafios, expondo oportunidades para experimentar com diferentes features do React e Next.js para solucionar vários problemas.
 
-<b>React 19</b> e <b>Next.js 15</b> foram usados, devido às suas melhorias de performance e experiência de desenvolvimento. Embora ainda estejam em sua versão RC (Release Candidate), ambos se provaram estáveis o suficiente para uso neste projeto. Porém, algumas funcionalidades não foram utilizadas, pois não estão bem documentadas atualmente.
+Next.js 14</b> foi usado, devido às suas melhorias de performance, otimizações e melhor experiência de desenvolvimento.
 
 <b>TailwindCSS</b> e <b>shadcn</b> foram escolhidos para acelerar o desenvolvimento, garantindo consistência e facilitando a criação de interfaces com alta qualidade.
 
@@ -189,10 +189,5 @@ Os componentes foram abstraídos de forma a permitir uma maior separação entre
     └── tsconfig.json
     └── vitest.config.ts
 ```
-
-## Pontos de melhoria
-
-Inserir pontos de melhoria aqui.
-
 
 Boilerplate gerado via [Progenitor](https://github.com/sidneifjr/Progenitor).
