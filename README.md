@@ -4,14 +4,12 @@
 
 -> Construa um simples CRUD de clientes com os requisitos imprescindíveis da vaga.
 
-"use o que você já sabe!"
-
 ## Requisitos:
 
 - [ ] O projeto deve utilizar o MSW para emular o back-end.
 - [ ] Adicionar testes de integração com Jest + Testing Library.
-- [ ] O projeto deve ser publicado no GitHub em um repositório público.
-- [ ] Os commits devem seguir a especificação Conventional Commits, com commits pequenos e mensagens significativas.
+- [x] O projeto deve ser publicado no GitHub em um repositório público.
+- [x] Os commits devem seguir a especificação Conventional Commits, com commits pequenos e mensagens significativas.
 
 - [x] TypeScript
 - [x] React Hooks
@@ -22,29 +20,29 @@
 
 - [ ] Storybook
 - [ ] React Query
-- [ ] Zod
+- [x] Zod
 - [ ] MSW
-- [ ] pnpm
+- [x] pnpm
 
 O prazo de entrega é de uma semana.
 
 ### Desenvolvimento.
 
-1. pnpm i, para instalar as dependências.
+1. `pnpm i`, para instalar as dependências.
 
-2. pnpm dev, para iniciar o servidor de desenvolvimento.
+2. `pnpm dev`, para iniciar o servidor de desenvolvimento.
 
 ### Produção.
 
-pnpm build.
+`pnpm build`.
 
 ### Prévia.
 
-pnpm build, então pnpm start.
+`pnpm build`, então `pnpm start`.
 
 ### Testes.
 
-pnpm test.
+`pnpm test`S.
 
 ## Stack
 
@@ -80,15 +78,117 @@ Patterns como <b>SOLID</b>, <b>Composition</b> e <b>Custom Hooks</b> foram ferra
 
 Os componentes foram abstraídos de forma a permitir uma maior separação entre as camadas de lógica e visual, semelhante à pattern de <b>Dumb e Smart Components</b>, porém um cuidado maior foi empregado para evitar excesso de abstrações, a qual poderia potencialmente poderia dificultar a navegação pelo projeto.
 
-Um aspecto importante a mencionar é que há uma ligeira diferença entre o peso da fonte renderizada no Figma e o browser: https://forum.figma.com/t/why-does-a-font-weight-in-figma-seem-lighter-than-the-same-weight-in-the-browser/2207; assim, não é possível garantir 100% de paridade com o layout fornecido, pois cada dispositivo processa fontes e propriedades relacionadas de uma forma diferente.
-
-<b>Obs.</b>: o erro "Warning: Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release." exibido no console ocorre devido à remoção de forwardRef e definição de "ref" como um prop comum. Isso não afeta o funcionamento dos componentes no shadcn.
-
-
 ## Estrutura de pastas
 
-Inserir estrutura de pastas aqui.
-
+```
+└── 📁teste-usabit
+    └── .env
+    └── .env.example
+    └── .eslintrc.json
+    └── .gitignore
+    └── .prettierrc
+    └── components.json
+    └── 📁cypress
+        └── 📁downloads
+        └── 📁e2e
+            └── 📁1-getting-started
+                └── todo.cy.js
+            └── 📁2-advanced-examples
+                └── actions.cy.js
+                └── aliasing.cy.js
+                └── assertions.cy.js
+                └── connectors.cy.js
+                └── cookies.cy.js
+                └── cypress_api.cy.js
+                └── files.cy.js
+                └── location.cy.js
+                └── misc.cy.js
+                └── navigation.cy.js
+                └── network_requests.cy.js
+                └── querying.cy.js
+                └── spies_stubs_clocks.cy.js
+                └── storage.cy.js
+                └── traversal.cy.js
+                └── utilities.cy.js
+                └── viewport.cy.js
+                └── waiting.cy.js
+                └── window.cy.js
+        └── 📁fixtures
+            └── example.json
+        └── 📁support
+            └── commands.ts
+            └── e2e.ts
+    └── cypress.config.ts
+    └── next-env.d.ts
+    └── next.config.mjs
+    └── package.json
+    └── pnpm-lock.yaml
+    └── postcss.config.mjs
+    └── 📁public
+        └── next.svg
+        └── vercel.svg
+    └── README.md
+    └── 📁src
+        └── 📁actions
+        └── 📁api
+            └── createItem.ts
+            └── deleteItem.ts
+            └── readItems.ts
+            └── updateItem.ts
+        └── 📁app
+            └── 📁example-for-tests
+                └── page.tsx
+            └── favicon.ico
+            └── globals.css
+            └── layout.tsx
+            └── loading.tsx
+            └── page.tsx
+        └── 📁assets
+            └── loader.svg
+        └── 📁components
+            └── 📁dashboard
+                └── dashboard-pagination.tsx
+                └── index.tsx
+            └── header.tsx
+            └── loader.tsx
+            └── 📁modal
+                └── modal-form-input-field.tsx
+                └── modal-form.tsx
+            └── 📁typography
+                └── h1.tsx
+                └── h2.tsx
+                └── h3.tsx
+                └── h4.tsx
+                └── paragraph.tsx
+            └── 📁ui
+                └── button.tsx
+                └── card.tsx
+                └── dialog.tsx
+                └── input.tsx
+                └── label.tsx
+                └── pagination.tsx
+                └── sonner.tsx
+        └── 📁data
+            └── db.json
+        └── env.ts
+        └── 📁hooks
+            └── useCrud.tsx
+            └── useModal.tsx
+            └── usePagination.tsx
+        └── 📁lib
+            └── utils.ts
+        └── 📁services
+            └── api.tsx
+        └── 📁tests
+            └── page.test.tsx
+        └── 📁types
+            └── user.ts
+        └── 📁utils
+            └── formatCurrency.ts
+    └── tailwind.config.ts
+    └── tsconfig.json
+    └── vitest.config.ts
+```
 
 ## Pontos de melhoria
 
